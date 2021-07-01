@@ -164,12 +164,6 @@ Project Link: [https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnno
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
 
 
 
