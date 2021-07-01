@@ -33,7 +33,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnouncegoogle-cloud-AccessibilityCallAnnouncegoogle-cloud-AccessibilityCallAnnounce">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/4760.png" alt="Logo" width="100" height="110">
   </a>
 
   <h3 align="center">Natural Call Announcer Using Google Wavenet TTS</h3>
