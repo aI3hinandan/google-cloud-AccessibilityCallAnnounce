@@ -42,7 +42,8 @@
     This project was started by me as a way to use the power of google cloud computing engine to enhance and improve upon the accessibility options that android provides, the first of which being announcing calls so you don't have to read the name, but in a much more natural sounding,customizable, and comfortable way using Wavenet Text-to-Speech engine provided by google.
  The project has basic functionality implemented, but the customization features are still under developement, along with the User-Interface.
     <br />
-    <a href="https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce"><strong>Explore the docs »</strong></a>
+  <br />
+    <a href="https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce/tree/main/app/src/main/java/com/gearlabs/accessibilitycallannounce"><strong>Source Kotlin Files »</strong></a>
     <br />
     <br />
     <a href="https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce">View Demo</a>
