@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** aI3hinandan, google-cloud-AccessibilityCallAnnounce, twitter_handle, email, project_title, project_description
+*** aI3hinandan, google-cloud-AccessibilityCallAnnounce, twitter_handle, abhivashisht399@gmail.com, Call Announcement Using Google Wavenet TTS, project_description
 -->
 
 
@@ -20,12 +20,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
 
@@ -36,7 +36,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Natural Call Announcer Using Google Wavenet TTS</h3>
 
   <p align="center">
     This project was started by me as a way to use the power of google cloud computing engine to enhance and improve upon the accessibility options that android provides, the first of which being announcing calls so you don't have to read the name, but in a much more natural sounding,customizable, and comfortable way using Wavenet Text-to-Speech engine provided by google.
@@ -46,7 +46,7 @@
     <br />
     <br />
     <a href="https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce">View Demo</a>
-    ·
+    .
     <a href="https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce/issues">Report Bug</a>
     ·
     <a href="https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce/issues">Request Feature</a>
@@ -85,44 +85,35 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`aI3hinandan`, `google-cloud-AccessibilityCallAnnounce`, `twitter_handle`, `email`, `project_title`, `project_description`
+This project is Still in an alpha stage and further updates cannot be guaranteed. It makes rest api calls to Google Wavenet TTS according to configuration, and retreives audio files in wave format, then uses then hooks into the native android content resolver to push  new custom uris for all the contacts.
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Kotlin](https://github.com/JetBrains/kotlin/releases/tag/v1.5.20)
+* [Google Cloud TTS](https://cloud.google.com/text-to-speech)
+* [Android Studio](https://developer.android.com/studio)
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+TODO
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* AOSP dialer OR a dialer that uses the core ndroid contacts databse
+* Android Sdk
+* Kotlin
+* Any IDE
 
 ### Installation
 
-1. Clone the repo
+ Clone the repo
    ```sh
    git clone https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
    ```
 
 
@@ -130,15 +121,16 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+TODO
 
 
 <!-- ROADMAP -->
 ## Roadmap
-
+* Performance Optimazions
+* Configurable Sound
+* Background Tones
+* Streamlined UI
+* Compatibility with More ROMs
 See the [open issues](https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce/issues) for a list of proposed features (and known issues).
 
 
@@ -166,7 +158,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - abhivashisht399@gmail.com
 
 Project Link: [https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce](https://github.com/aI3hinandan/google-cloud-AccessibilityCallAnnounce)
 
