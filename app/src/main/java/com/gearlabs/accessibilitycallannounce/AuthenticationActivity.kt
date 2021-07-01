@@ -15,7 +15,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
-const val requestIdToken = "545466549369-ebaue5uni0ttlqfnn3tbf1s2pl0qed0d.apps.googleusercontent.com"
+const val requestIdToken = ""
 class AuthenticationActivity : AppCompatActivity(), View.OnClickListener {
     companion object {
         private val TAG = "ClassName"
