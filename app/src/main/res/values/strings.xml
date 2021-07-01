@@ -1,0 +1,49 @@
+<resources>
+    <string-array name="languages_array">
+        <item>en-US</item>
+        <item>en-IN</item>
+        <item>hi-IN</item>
+    </string-array>
+
+    <string-array name="voice_hindi_array">
+        <item>hi-IN-Wavenet-A</item>
+        <item>hi-IN-Wavenet-B</item>
+        <item>hi-IN-Wavenet-C</item>
+        <item>hi-IN-Wavenet-D</item>
+    </string-array>
+
+    <string-array name="voice_english_india_array">
+        <item>en-IN-Wavenet-A</item>
+        <item>en-IN-Wavenet-B</item>
+        <item>en-IN-Wavenet-C</item>
+        <item>en-IN-Wavenet-D</item>
+    </string-array>
+
+    <string-array name="voice_english_us_array">
+        <item>en-US-Wavenet-A</item>
+        <item>en-US-Wavenet-B</item>
+        <item>en-US-Wavenet-C</item>
+        <item>en-US-Wavenet-D</item>
+    </string-array>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+
+    <string name="facebook_app_id">2843460245731329</string>
+    <string name="fb_login_protocol_scheme">fb2843460245731329</string>
+
+
+    <string name="app_name">AccessibilityCallAnnounce</string>
+    <string name="title_activity_main0">MainActivity0</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+</resources>

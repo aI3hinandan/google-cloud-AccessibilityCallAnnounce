@@ -1,0 +1,97 @@
+/* fun setRingtone(givenName:String) {
+        val contentResolver = contentResolver
+        // Query raw_contacts table by display name field ( given_name family_name ) to get raw contact id.
+        // Create query column array.
+        val queryColumnArr =
+            arrayOf(ContactsContract.RawContacts._ID)
+
+        // Create where condition clause.
+
+        // Create where condition clause.
+        val displayName: String = givenName.toString()
+        val whereClause =
+            ContactsContract.RawContacts.DISPLAY_NAME_PRIMARY + " = '" + displayName + "'"
+
+        // Query raw contact id through RawContacts uri.
+        val rawContactUri = ContactsContract.RawContacts.CONTENT_URI
+
+        // Return the query cursor.
+        val cursor =
+            contentResolver.query(rawContactUri, queryColumnArr, whereClause, null, null)
+
+        var rawContactId: Long = -1
+
+        if (cursor != null) {
+            // Get contact count that has same display name, generally it should be one.
+            val queryResultCount = cursor.count
+            // This check is used to avoid cursor index out of bounds exception. android.database.CursorIndexOutOfBoundsException
+            if (queryResultCount > 0) {
+                // Move to the first row in the result cursor.
+                cursor.moveToFirst()
+                // Get raw_contact_id.
+                rawContactId =
+                    cursor.getLong(cursor.getColumnIndex(ContactsContract.RawContacts._ID))
+                cursor.close()
+            }
+        }
+        setRingtoneHelper(rawContactId)
+
+
+    }
+
+    private fun setRingtoneHelper(rawContactId: Long) {
+        val cr: ContentResolver = contentResolver
+        val value: InputStream = this.resources.openRawResource(R.raw.audio)
+        //val value: String = Uri.parse("android.resource://ringtonecustomizer/" + R.raw.audio).toString()
+        if(rawContactId > -1) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_CONTACTS)
+                != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this,
+                    arrayOf(Manifest.permission.WRITE_CONTACTS),
+                    MY_PERMISSIONS_REQUEST_WRITE_CONTACTS)
+            }
+            val contentValues: ContentValues = ContentValues()
+            contentValues.put(ContactsContract.Contacts.CUSTOM_RINGTONE, value.read())
+            val whereClauseBuf = StringBuffer()
+
+            // Specify the update contact id.
+
+            // Specify the update contact id.
+            whereClauseBuf.append(ContactsContract.Data.RAW_CONTACT_ID)
+            whereClauseBuf.append("=")
+            whereClauseBuf.append(rawContactId)
+
+            // Specify the row data mimetype to phone mimetype( vnd.android.cursor.item/phone_v2 )
+
+            // Specify the row data mimetype to phone mimetype( vnd.android.cursor.item/phone_v2 )
+            whereClauseBuf.append(" and ")
+            whereClauseBuf.append(ContactsContract.Data.MIMETYPE)
+            whereClauseBuf.append(" = '")
+            val mimetype = ContactsContract.CommonDataKinds.Phone.CONTENT_ITEM_TYPE
+            whereClauseBuf.append(mimetype)
+            whereClauseBuf.append("'")
+
+            // Specify phone type.
+
+            // Specify phone type.
+            whereClauseBuf.append(" and ")
+            whereClauseBuf.append(ContactsContract.CommonDataKinds.Phone.TYPE)
+            whereClauseBuf.append(" = ")
+            whereClauseBuf.append(ContactsContract.CommonDataKinds.Phone.TYPE_MOBILE)
+
+            // Update phone info through Data uri.Otherwise it may throw java.lang.UnsupportedOperationException.
+
+            // Update phone info through Data uri.Otherwise it may throw java.lang.UnsupportedOperationException.
+
+
+            val dataUri = ContactsContract.Data.CONTENT_URI
+                contentResolver.update(dataUri, contentValues, whereClauseBuf.toString(), null)
+            Toast.makeText(this, rawContactId.toString(), Toast.LENGTH_LONG).show()
+
+    }
+
+
+
+
+
+}*/

@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "545466549369",
+    "firebase_url": "https://accessibility-ringtone-project.firebaseio.com",
+    "project_id": "accessibility-ringtone-project",
+    "storage_bucket": "accessibility-ringtone-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545466549369:android:4838b57cea514dec37c0a8",
+        "android_client_info": {
+          "package_name": "com.gearlabs.accessibilitycallannounce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545466549369-8f6u1btkh01mj7vr1k2gukpahd8gi69n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gearlabs.accessibilitycallannounce",
+            "certificate_hash": "1a5033d7527e85eb0db7762272843a75c6888679"
+          }
+        },
+        {
+          "client_id": "545466549369-8fj3mkgqdkvmlbpadae0g86meu3no18i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbeu_UUoppR0GnbmBtk4RoLxARR8yQCHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545466549369-8fj3mkgqdkvmlbpadae0g86meu3no18i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545466549369:android:4d532c6bf2ed07fc37c0a8",
+        "android_client_info": {
+          "package_name": "com.gearlabs.ringtonecustomizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545466549369-4juunhuop787ej92vpvqr30at5eu2iqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gearlabs.ringtonecustomizer",
+            "certificate_hash": "1a5033d7527e85eb0db7762272843a75c6888679"
+          }
+        },
+        {
+          "client_id": "545466549369-8fj3mkgqdkvmlbpadae0g86meu3no18i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbeu_UUoppR0GnbmBtk4RoLxARR8yQCHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545466549369-8fj3mkgqdkvmlbpadae0g86meu3no18i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
