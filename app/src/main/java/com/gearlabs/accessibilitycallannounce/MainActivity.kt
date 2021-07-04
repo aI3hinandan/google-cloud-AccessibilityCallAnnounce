@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun onClickGet(view: View) {
-        val contactsList: ListView = findViewById(R.id.contacts_list)
+
         val list = onClickGetName(this)
         //  val unfilteredList : MutableList<MutableList<String>> = getCallLogs(this)
         filteredList = list
@@ -53,11 +53,7 @@ class MainActivity : AppCompatActivity() {
         for (i in list) {
             numberList.add(i[0])
         }
-        val ad: ArrayAdapter<String> = ArrayAdapter(
-            this,
-            android.R.layout.simple_list_item_1, numberList
-        )
-        contactsList.adapter = ad
+        Toast.makeText(this, "Contacts Retrieved", Toast.LENGTH_SHORT).show()
     }
 
     fun onClickSynthesize(v:View){
@@ -74,7 +70,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun onClickTest(view: View) {
+    fun onClickGetFromCloud(view: View) {
         var count = 0
         val newList:MutableList<MutableList<String>> = ArrayList()
 
@@ -101,43 +97,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun onClickTest2(v: View) {
-        val number = "+919896215977"
-        val k: File = getFileObj("Synthesised Files", "$number.wav", this)
-        val values = ContentValues()
-        Toast.makeText(this, k.exists().toString(), Toast.LENGTH_SHORT).show()
-        Toast.makeText(this, k.absolutePath, Toast.LENGTH_SHORT).show()
-        values.put(MediaStore.MediaColumns.DATA, k.absolutePath)
-        values.put(MediaStore.MediaColumns.TITLE, "new")
-        values.put(MediaStore.MediaColumns.SIZE, 215454)
-        values.put(MediaStore.MediaColumns.MIME_TYPE, "audio/wav")
-        values.put(MediaStore.Audio.Media.ARTIST, "GearLabs")
-        values.put(MediaStore.Audio.Media.DURATION, 230)
-        values.put(MediaStore.Audio.Media.IS_RINGTONE, true)
-        values.put(MediaStore.Audio.Media.IS_NOTIFICATION, false)
-        values.put(MediaStore.Audio.Media.IS_ALARM, false)
-        values.put(MediaStore.Audio.Media.IS_MUSIC, false)
 
-        val uri = MediaStore.Audio.Media.getContentUriForPath(k.absolutePath)
-        
-        contentResolver.delete(
-            uri,
-            MediaStore.MediaColumns.TITLE + "=\"" + "new" + "\"", null
-        )
-        contentResolver.delete(
-            uri,
-            MediaStore.MediaColumns.DATA + "=\""
-                    + k.absolutePath + "\"", null
-        )
-
-        val newUri = contentResolver.insert(uri, values)
-
-        RingtoneManager.setActualDefaultRingtoneUri(
-            this,
-            RingtoneManager.TYPE_RINGTONE,
-            newUri
-        )
-    }
 
     fun onClickSet(v: View){
         var count = 0
