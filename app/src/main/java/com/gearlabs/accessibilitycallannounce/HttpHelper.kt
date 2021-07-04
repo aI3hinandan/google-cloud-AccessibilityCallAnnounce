@@ -8,7 +8,7 @@ import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
 
 
-private const val API_KEY = "AIzaSyBRfz_3VYoCqeh4Hi-42UHk9y_mowoGR48"
+private const val API_KEY = ""
 class HttpHelper(context_: Context) {
     val context: Context
     val queue: RequestQueue
